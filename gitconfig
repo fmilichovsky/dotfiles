@@ -1,0 +1,74 @@
+[alias]
+	# State manipulation
+	newb = switch -c
+	s = switch
+	pf = push --force
+	rh = reset --hard
+	aa = add --all :/
+	ci = commit -v
+	ca = commit --all --amend --no-edit
+	save = commit -a -m "Save"
+	f = fetch --tags --prune
+	fa = fetch --all --tags --prune
+	staash = stash --include-untracked
+	# Information
+	versions = tag -l --sort=version:refname
+	st = status -sb
+	lg = log -p
+	gr = log --graph --format=line # graph
+	grd = log --graph --format=detail # graph detail
+	gra = log --graph --format=line --all # graph all
+	grad = log --graph --format=detail --all # graph all in detail
+	# Environment cleanup
+	update-submodules = submodule update --init --recursive
+	upgrade-submodules = submodule update --init --remote
+	branchwipe = removed-branches --prune --force
+
+[init]
+	defaultBranch = main
+
+[diff]
+	mnemonicPrefix = true
+	wordRegex = "[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+"
+	compactionHeuristic = true
+
+[color]
+	ui = auto
+
+[color "grep"]
+	match = cyan bold
+	selected = blue
+	context = normal
+	filename = magenta
+	linenumber = green
+	separator = yellow
+	function = blue
+
+[pretty]
+	line = "%C(auto)%h %<|(60,trunc)%s %C(green)%ad%C(auto)%d"
+	detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ad%n %C(auto)%d%n"
+
+[merge]
+	defaultToUpstream = true
+
+[pull]
+	ff = only
+
+[push]
+	default = upstream
+
+[user]
+	useConfigOnly = true
+
+[http]
+	cookieFile = ~/.gitcookies
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+	path = ~/.gitconfig_local

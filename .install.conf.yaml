@@ -16,6 +16,7 @@
     ~/.shell:
     ~/.zsh:
     ~/.zshrc:
+    ~/.Brewfile:
 
 - shell:
   - git submodule sync --recursive

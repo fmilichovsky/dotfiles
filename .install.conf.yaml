@@ -9,6 +9,7 @@
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
+      force: true
     ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.gitignore_global:
@@ -16,6 +17,7 @@
     ~/.shell:
     ~/.zsh:
     ~/.zshrc:
+      force: true
     ~/.Brewfile:
 
 - shell:

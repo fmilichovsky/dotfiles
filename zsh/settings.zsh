@@ -23,6 +23,9 @@ KEYTIMEOUT=1 # corresponds to 10ms
 # Use vscode as the editor
 export EDITOR=code
 
+# Use vim specifically for k8s operations (e.g. k9s)
+export KUBE_EDITOR=vim
+
 # Use incremental search
 bindkey "^R" history-incremental-search-backward
 

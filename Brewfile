@@ -7,8 +7,8 @@ brew "gh"
 brew "gnupg"
 
 # QoL
-cask "rectangle"
-cask "iterm2"
+# cask "rectangle"
+# cask "iterm2"
 brew "fzf"
 
 # Tools
@@ -17,9 +17,13 @@ brew "yq"
 brew "tree"
 brew "wget"
 
+# Languages
+brew "python"
+brew "go"
+
 # Cloud
 brew "docker"
 brew "helm"
 brew "kind"
 brew "kustomize"
-brew "deraild/k9s/k9s"
+brew "derailed/k9s/k9s"

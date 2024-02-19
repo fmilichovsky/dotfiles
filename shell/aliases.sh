@@ -15,6 +15,8 @@ alias mv='mv -i'
 alias g="git"
 alias k="kubectl"
 alias tf="terraform"
+alias python="python3"
+alias pip="pip3"
 
 # Update dotfiles
 dfu() {

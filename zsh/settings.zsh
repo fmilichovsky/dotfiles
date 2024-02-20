@@ -26,6 +26,9 @@ export EDITOR=code
 # Use vim specifically for k8s operations (e.g. k9s)
 export KUBE_EDITOR=vim
 
+# Disable virtual env requirements for python pip
+export PIP_REQUIRE_VIRTUALENV=false
+
 # Use incremental search
 bindkey "^R" history-incremental-search-backward
 

@@ -34,3 +34,6 @@ bindkey "^R" history-incremental-search-backward
 
 # Disable shell builtins
 disable r
+
+# Paths
+path+=(/opt/homebrew/bin)

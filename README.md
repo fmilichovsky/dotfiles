@@ -20,6 +20,16 @@ To apply the dotfiles on an environment:
 
 This operation should be idempotent - can be done often and repeatedly.
 
+## Brewfile
+
+Installing the [`Brewfile`](./Brewfile) happens automatically as part of [installtion](#install), but it suppresses the progress output.
+
+To run it separately after the file gets linked via installation:
+
+```shell
+brew bundle install
+```
+
 ## Changing dotfiles
 
 1. Modify the necessary dotfiles.

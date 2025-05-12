@@ -1,5 +1,4 @@
 # VCS
-brew "libgit2@1.5"
 brew "git-absorb"
 brew "gh"
 
@@ -18,7 +17,6 @@ brew "tree"
 brew "wget"
 
 # Languages
-brew "python"
 brew "go"
 
 # Cloud
@@ -27,3 +25,6 @@ brew "helm"
 brew "kind"
 brew "kustomize"
 brew "derailed/k9s/k9s"
+brew "awscli"
+brew "doctl"
+brew "danielfoehrkn/switch/switch"
